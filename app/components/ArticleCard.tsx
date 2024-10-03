@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import { Article } from "@/types";
 import Image from "next/image";
+import { ARTICLE_SOURCE_PROFILE } from "@/constants";
 
 const ArticleCard = ({ article }: { article: Article }) => {
   return (
@@ -18,7 +19,7 @@ const ArticleCard = ({ article }: { article: Article }) => {
         </p>
       </div>
       <div className="mt-auto flex items-center gap-x-3">
-        <img className="w-8 h-8 rounded-full" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80" alt="Image Description" />
+        <Image className="rounded-full w-auto" height={32} width={32} src={ARTICLE_SOURCE_PROFILE} alt="Image Description" />
         <div>
           <h5 className="text-sm text-gray-800 dark:text-gray-200 truncate-2">{article.source.name}</h5>
           <p className="text-xs text-gray-500 truncate-3">{new Date(article.publishedAt).toLocaleDateString()}</p>

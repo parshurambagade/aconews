@@ -2,6 +2,8 @@ import { Article } from "./types";
 
 export const GNEWS_API_KEY = process.env.NEXT_PUBLIC_GNEWS_API_KEY;
 
+export const ARTICLE_SOURCE_PROFILE = "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=320&h=320&q=80";
+
 export const categories = ["general", "business", "entertainment", "health", "science", "sports", "technology"]
 
 export const GNEWS_TOP_HEADLINES_URL = `https://gnews.io/api/v4/top-headlines?&lang=en&apikey=${GNEWS_API_KEY}&category=`

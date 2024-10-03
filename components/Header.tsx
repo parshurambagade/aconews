@@ -1,7 +1,6 @@
 'use client';
 import Link from 'next/link'
 import React, { useState } from 'react'
-import NewsSearch from './NewsSearch';
 
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);

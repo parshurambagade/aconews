@@ -10,7 +10,7 @@ interface ArticlesContextProps {
 }
 const ArticlesContext = createContext<ArticlesContextProps | null>(null);
 
-export const ArticlesProvider = ({ children }) => {
+export const ArticlesProvider = ({ children }: { children: React.ReactNode }) => {
     const [articles, setArticles] = useState<Article[]>([]);
     const [searchedArticles, setSearchedArticles] = useState<Article[]>([]);
     return (

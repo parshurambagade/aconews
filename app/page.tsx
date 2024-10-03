@@ -4,9 +4,9 @@ import { useState } from "react";
 import { Article } from "@/types";
 import useTopHeadlines from "@/hooks/useTopHeadlines";
 import { categories } from "@/constants";
-import CategoriesContainer from "@/components/CategoriesContainer";
-import ArticlesContainer from "@/components/ArticlesContainer";
-import ShimmerArticlesContainer from "@/components/shimmer/ShimmerArticlesContainer";
+import CategoriesContainer from "@/app/components/CategoriesContainer";
+import ArticlesContainer from "@/app/components/ArticlesContainer";
+import ShimmerArticlesContainer from "@/app/components/shimmer/ShimmerArticlesContainer";
 
 export default function Home() {
   const [news, setNews] = useState<Article[]>([]);
@@ -25,6 +25,8 @@ export default function Home() {
             setSelectedCategory={setSelectedCategory}
             categories={categories}
           />
+
+
 
           {isLoading ? (
             <ShimmerArticlesContainer />

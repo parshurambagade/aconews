@@ -18,7 +18,7 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
-      <main className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
+      <main className="max-w-7xl mx-auto py-0 sm:px-6 lg:px-8">
         <div className="px-4 py-6 sm:px-0">
           <CategoriesContainer
             selectedCategory={selectedCategory}
@@ -27,10 +27,10 @@ export default function Home() {
           />
 
 
-
-          {isLoading ? (
+          {
+          isLoading ? (
             <ShimmerArticlesContainer />
-          ) : (
+          ) : !news ? <h2>Something went wrong,please try again later!</h2> : (
             <ArticlesContainer news={news} />
           )}
         </div>

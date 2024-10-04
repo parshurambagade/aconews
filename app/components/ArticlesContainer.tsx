@@ -5,7 +5,7 @@ import ArticleCard from "./ArticleCard";
 
 const ArticlesContainer = ({news}:{news:Article[]}) => {
   return (
-    <div className="max-w-[85rem] px-0 lg:py-14 mx-auto">
+    <div className="max-w-[85rem] px-4 md:px-2  py-6 lg:py-8 mx-auto">
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {news?.map((article, index) => (
           <motion.div

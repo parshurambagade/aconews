@@ -23,16 +23,16 @@ const NewsSearch = () => {
   };
 
   return (
-    <div className="max-w-xs sm:max-w-md mx-auto">
+    <div className="max-w-sm sm:max-w-md">
       <form onSubmit={handleSearch}>
-        <div className="relative z-10 flex space-x-3 p-3 py-1 bg-white border rounded-lg shadow-lg shadow-gray-100 dark:bg-slate-900 dark:border-gray-700 dark:shadow-gray-900/[.2]">
+        <div className="w-full relative z-10 flex space-x-3 px-2 py-1 bg-white border rounded-lg shadow-lg shadow-gray-100 dark:bg-slate-900 dark:border-gray-700 dark:shadow-gray-900/[.2]">
           <div className="flex-[1_0_0%]">
             <label htmlFor="hs-search-article" className="block text-sm text-gray-700 font-medium dark:text-white"><span className="sr-only">Search for news</span></label>
             <input
               type="text"
               name="hs-search-article"
               id="hs-search-article"
-              className="outline-none py-2.5 px-4 block w-full border-transparent rounded-lg focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-transparent dark:text-gray-400 dark:focus:ring-gray-600"
+              className="outline-none py-2.5 px-4 block w-full border-transparent rounded-lg focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 bg-gray-800 dark:border-transparent dark:text-gray-400 dark:focus:ring-gray-600"
               placeholder="Search for news"
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}

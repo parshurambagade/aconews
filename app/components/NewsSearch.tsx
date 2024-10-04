@@ -32,7 +32,7 @@ const NewsSearch = () => {
               type="text"
               name="hs-search-article"
               id="hs-search-article"
-              className="outline-none py-2.5 px-4 block w-full border-transparent rounded-lg focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 bg-gray-800 dark:border-transparent dark:text-gray-400 dark:focus:ring-gray-600"
+              className="outline-none py-2.5 px-4 block w-full border-transparent rounded-lg focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-transparent dark:text-gray-400 dark:focus:ring-gray-600"
               placeholder="Search for news"
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}

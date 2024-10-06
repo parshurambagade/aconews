@@ -10,9 +10,9 @@ import ShimmerArticlesContainer from "@/app/components/shimmer/ShimmerArticlesCo
 
 export default function Home() {
   const [news, setNews] = useState<Article[]>([]);
-  const [selectedCategory, setSelectedCategory] = useState("general");
+  const [selectedCategory, setSelectedCategory] = useState<string>("general");
 
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState<boolean>(true);
 
   useTopHeadlines({ setIsLoading, setNews, selectedCategory });
 

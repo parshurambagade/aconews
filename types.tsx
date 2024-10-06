@@ -1,4 +1,3 @@
-
 export interface Article {
   title: string;
   description: string;
@@ -16,7 +15,7 @@ export interface NewsData {
   articles: Article[];
 }
 
-export interface useTopHeadlinesTypes {
+export interface useTopHeadlinesProps {
   selectedCategory: string;
   setIsLoading: React.Dispatch<React.SetStateAction<boolean>>;
   setNews: React.Dispatch<React.SetStateAction<Article[]>>;
@@ -26,4 +25,8 @@ export interface CategoriesContainerProps {
   categories: string[];
   setSelectedCategory: React.Dispatch<React.SetStateAction<string>>;
   selectedCategory: string;
+}
+
+export interface NewsSearchProps {
+  setIsLoading: React.Dispatch<React.SetStateAction<boolean>>;
 }

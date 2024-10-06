@@ -1,12 +1,12 @@
 import { GNEWS_TOP_HEADLINES_URL } from "@/constants";
-import { useTopHeadlinesTypes } from "@/types";
+import { useTopHeadlinesProps} from "@/types";
 import { useCallback, useEffect } from "react";
 
 const useTopHeadlines = ({
   setIsLoading,
   setNews,
   selectedCategory,
-}: useTopHeadlinesTypes) => {
+}: useTopHeadlinesProps) => {
   const fetchTopHeadlines = useCallback(async () => {
     try {
       setIsLoading(true);

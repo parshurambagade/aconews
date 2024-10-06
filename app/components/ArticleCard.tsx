@@ -11,10 +11,10 @@ const ArticleCard = ({ article }: { article: Article }) => {
         <Image className="w-full object-cover rounded-xl" height={200} width={300} src={article.image} alt={article.title} />
       </div>
       <div className="my-6">
-        <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-300 dark:group-hover:text-white">
+        <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-300 dark:group-hover:text-white line-clamp-2">
           {article.title}
         </h3>
-        <p className="mt-5 text-gray-600 dark:text-gray-400">
+        <p className="mt-5 text-gray-600 dark:text-gray-400 line-clamp-3">
           {article.description}
         </p>
       </div>
